@@ -1,0 +1,8 @@
+<template>
+    <lightning-card title="SOQL query" icon-name="action:new_note">
+        <div style="height: 130px;" class="slds-var-m-around_medium">
+            <lightning-textarea name="query" label="Digite sua Query" class="queryTextarea"></lightning-textarea>
+            <lightning-button label="Executar" icon-name="utility:apex" onclick={execute}></lightning-button>
+        </div>
+    </lightning-card>
+</template>
