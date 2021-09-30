@@ -1,5 +1,6 @@
 import { LightningElement, api, wire, track } from 'lwc';
 import { getRecord, getRecordNotifyChange  } from 'lightning/uiRecordApi';
+import { updateRecord} from 'lightning/uiRecordApi';
 import STREET_FIELD from '@salesforce/schema/Contact.MailingStreet';
 import CITY_FIELD from '@salesforce/schema/Contact.MailingCity';
 import POSTCODE_FIELD from '@salesforce/schema/Contact.MailingState';

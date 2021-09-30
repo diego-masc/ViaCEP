@@ -1,8 +1,44 @@
 <template>
     <lightning-card title="Atualizar Endereço" icon-name="action:refresh">
-        <div class="slds-p-left_small slds-p-right_small">
+        <div style="height: 350px;" class="slds-var-m-around_medium">
             <lightning-textarea name="CEP" label="Inserir novo CEP" class="Textarea" placeholder = 01001000 max-length = 9></lightning-textarea>
-            <lightning-button variant = "success" label="Atualizar" icon-name="utility:check" onclick={execute}></lightning-button>
+            <lightning-button variant = "brand" label="Pesquisar" icon-name="utility:skip_forward" onclick={execute}></lightning-button>
+            <div class="slds-p-left_small slds-p-right_small">
+      <lightning-input
+        label="CEP"
+        name="cep"
+        value={cep}
+        type="text"
+        id="cep"
+      ></lightning-input>
+      <lightning-input
+        label="Rua"
+        name="rua"
+        value={rua}
+        type="text"
+        id="rua"
+      ></lightning-input>
+      <lightning-input
+        label="Cidade"
+        name="cidade"
+        value={cidade}
+        type="text"
+        id="cidade"
+      ></lightning-input>
+
+      <lightning-input
+        label="Estado"
+        name="uf"
+        value={uf}
+        type="text"
+        id="uf"
+      ></lightning-input>
+    </div>
+        </div>
+        <div class="slds-p-left_small slds-p-right_small">
+        <lightning-button variant = "brand" label="Atualizar" icon-name="utility:check" onclick={executeupdate}>
+          </br>
+        </lightning-button>
         </div>
     </lightning-card>
 </template>
